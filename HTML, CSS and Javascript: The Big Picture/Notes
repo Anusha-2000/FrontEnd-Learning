@@ -1,0 +1,237 @@
+World Wide Web:
+-------------------------
+The world wide web is an information space where documents and other wb resources are identified by Uniform Resource Locators(URLs), interlinked by hypertext links and can be accessed via the internet.
+
+Ingredients of the Web:
+-------------------------
+1. HTML for Resources(Images, text, documents and other files) 
+   The content we wnat to use, websites we want to browse, files we want to share, etc.
+2. Uniform Resource Locators(URLs)
+   These uniquely identify the resources so that your web browser can show them to you. Every resource on the web has a unique url.
+3. HyperText Transfer Protocol(HTTP) and other protocols.
+   This http potocol is a data transfer protocol and is responsible for  retreiving the documents and communicating to the web browser.
+
+There are more parts to a working www besides these.
+
+Working:
+-------------------------
+1. Documents like html docs and other files are hosted in a web server. This is just a computer but it runs special software that enables it to serve up the HTML docs and other resources.
+2. The web servers will have a unique address on the internet-url. All resources on the internet have an url to identify them on the internet.
+3. We have a web server that hosts resources. You can use these resources from a client computer that has a web bowser installed on it.
+4. These web bowsers then asks the internet to serve up a specific document that lives at the address of a given url.
+5. The Http protocol takes care of the information communication between the browser and the server to get the doc so that the browser can get that on the screen.
+6. A web browser doesn't just get docs from a server. Sometimes, it even sends docs back. It can alter the html on the client pc, like filling form data and send that back to the server for processing using an http POSt operation. The http protocol takes care of this and can perform many operations like this.
+7. There is much more going on like domain name server calls, and TCP/IP protocol handshakes, etc.
+
+
+Displaying the web with HTML:
+--------------------------------------------------
+Where Did HTML come from:
+-------------------------
+1. Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.
+2. It is not a programming or scripting language. That is, you use it to control the presentation of the content ont he web page.
+3. It sprouted up at the same time as the world wide web and the first web browser.
+4. It was first specified in 1990. 
+5. In 1993, the first official draft proposal for html specification was defined by the International Engineering Task Force. Proposal for an actual standard.
+6. 1995 - HTML 2.0 standand; 1997 - HTML 3.2; 1999 - HTML 4.1; 2014 - HTML5; 2016 - HTML 5.1; 2017 - HTML 5.3
+7. In 2000, html oficially became  an international standard.
+
+Who manages the html specification?
+1990 - Tim Berners-Lee ( Founder of www)
+1993 - Internet Engineering Task Force (IETF)
+1996 - World Wide Web Consortium (W3C)
+2000 - International Organization for Standardization (ISO)
+       International Electrotechnical Commission (IEC)
+       (ISO/IEC 15445:2000)
+2004 - Web Hypertext Application Technology Working Group (WHATWG) founded by people from Mozilla,apple and Opera formed in response to slow development of standards         by the W3C. The group worked on development of HTML 5. It was adopted by the W#C as the way forward and became a joint deliverable of the W3C and WHATWG.
+
+
+What is HTML?
+-------------------------
+1. The things that you see in websites and web applications are rendered by the web browser from HTML docs.
+2. These are docs with .htm or .html extension that are serverd by the servers on the unique urls.
+3. html docs have various elements specified in the html specification.
+4. <!DOCTYPE> element not mandatory but tells the browser that the doc is of html type and the version of html.
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta information -->
+  </head>
+  <body>
+    <!-- content of the page -->
+  </body>
+</html>
+
+Website to know which browsers understand which html elements:- https://caniuse.com 
+
+
+Working with HTML
+-------------------------
+1. HTML docs live on webserver and are identified by URLs which are unique throughout the internet.
+2. The http protocol then transports the user requests to the web browser, and html and other documnets to users that use web browsers on client computers.
+3. To write html documents, you need not worry about http or client computers. You just write html on notepad or any other IDEs and deploy those on the web browser.
+4. A web server can host your html document and expose them on the internet uusing urls.
+
+Writing HTML with a framework:
+1. When you don't wan to write HTML from scratch, you could use a framework to generate html for you.
+2. Many of the websites and applications on the internet are built this way.
+3. You write software code in a programming language like C# or java, and often you write bits of html as well.
+4. You do this by using a framework like PHP, or ASP.NET.
+5. Using a framework doesn't only generate HTML for you, but also allows you to do more advanced things like communicate with the database.
+6. All of the code that you write and all of the code of the framework lives on the web server.
+7. Now the client PC can request a document from an URL. The framework will then generate HTML for the requested document and send that to the browser to be displayed    on the screen.
+8. So instead of having plain html documents, a framework provides a layer around it, which generates HTML and provides additional features like being able to connect    to a database.
+
+Example - Microsoft ASP.NET MVC Framework.
+-------------------------------------------------
+
+1. With this framework, you create CSHTML files with ".cshtml" file extension. It is a C# HTML file that uses the RAZOR language to manipulate the data. 
+2. In the CSHTML file youd write html combined with RAZOR language to work with data. 
+3. Additionally, You have C# files with ".cs" file extension which run on the web server and respond to the URL  request. to serve up the cshtml page. Before it does that, it looks for corresponding data in the database, and after processing returns the cshtml file which triggers the generation of html that is sent to the browser.
+4. So, a framework like this provides more flexibility and features but it's also much more advanced than just HTML.
+
+Other frameworks for Writing HTML:
+-------------------------------------------------
+PHP
+Java
+ASP.NET MVC
+Ruby
+Python
+Node.js
+Go
+
+Readymade:- Wordpress.com and Ghost.org
+
+
+CSS
+-------------------------------------------------
+
+History of CSS:
+-------------------------------------------------
+1994 - Proposed as a stylesheet language.
+1996 - Official recommendation of the css level 1 standard. It is considered as a specification.
+1998 - CSS level 2 recommendation
+2004 - CSS level 2.1 published by W3C.
+2011 - CSS 2.1 official recommendation; CSS3 selectors and CSS3 colors.
+2017 - CSS 3 UI module; CSS flexbox candidate 1 recommendation
+
+What is CSS?
+-------------------------------------------------
+1. Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.
+2. CSS is used to beautify and style the html pages by adding colours, defining borders, etc.
+3. CSS is called cascading, as in cascading style sheets, because properties are applied in a specific order based on priority.
+4. !important > id > class > element
+
+Advanced CSS Syntax:
+-------------------------------------------------
+1. Media property
+@media screen and (min-width : 480px) {
+  body {
+    background-color : lightgreen;
+  }
+}
+
+In the above example, we tell the browser, whenever we are displaying HTML on the screen as opposed to when we print a page, for instance, and when the page screen has a minimum width of 480px, I want the body element to have the background color lightgreen. Whenever the width of the page is less than 480px, the background color is the default one. This is what we call a responsive web page as it responds to change and adjusts accordingly.
+
+
+2. Gradient Property
+#grad {
+  background: linear-gradient(red, yellow);
+}
+In this example, we tell the browser to render everything with the id "grad" with a gradient color that linearly goes from red to yellow. Cool, right?
+There are many more advanced properties including animations.
+
+
+Just like with HTML, the web browsers are the ones that provide the actual capabilities of CSS. CSS just specifies the standard of what they should do when they interpret a certain property.
+And just like with  HTML, not every browser provides support for every css property.
+To find out which browsers support which css properties, go to https://caniuse.com.
+
+
+Working with CSS
+---------------------
+1. The web consisits of html docs that can be optionally styled by css.
+2. Like html docs and every other resource on the interent css docs are also accessed by URLs.
+3. The html file and css file can live on same or different servers. That is not a problem because you can link any documents to an HTML document.
+4. These docs are then transported through the http protocol which sends them to the web browsers which requested them on the client pc.
+5. To work with css, we should know how to couple css with html.
+6. It is the web browser that does all the work when it styles the HTML. It takes the HTML file, interprets it, and applies these styles to it that are described in the css document. CSS just tells the browser how to interpret it.
+7. It is used to seperate style from content.
+
+Ways to create CSS:
+-------------------
+1. Create it from scratch using text editors or IDEs (inline, internal, external).
+2. Use CSS from a library - CSS files created by other people that you can use. Most of them are opensource. Bootstrap is one such library created by twitter. You 
+   just point to the url of the bootsrap to use it.
+3. Using CSS Preprocessor - it is a framework or a language that is used to create CSS styles with. CSS preprocessors can do more advance things than CSS. They were     created bcoz some people were not happy with the simplistic expressions that you can do in CSS and how this can lead to large and difficult-to-maintain css docs.
+   There are a lot of css preprocessors like Sass and LESS. When you use a CSS preprocessor, you write the style code in the language of a preprocessor. The langage     of the preprocessor is more advanced than CSS. In case of some preprocessors like LESS, it also involves variables. After done writing the code in the 
+   prerpocessor we compile it to generate corresponding CSS which can be used like regular CSS to be served up and style the web pages.
+
+
+
+
+JavaScript:
+-------------------------------------------------
+1. It is the glue of the web.
+2. Javascript is a hight-level interpreted programming language.
+   High-level language -> High abstraction from the computer.
+   interpreted language -> You need not compile it. Every line is interpreted. This was intentional to make 			   the language easy to use without the need for compilers or otherwise complicated 			   tooling.
+   C is a low level language.
+3. Javascript is not similar to java in implementation.
+
+
+History of JavaScript:
+----------------------
+1995 - Protype of LiveScript developed by Brendan Ike for Netscape communications and first version is released as Javascript.
+
+
+What is JavaScript:
+-------------------------------------------------
+1. Javascript can be used to manipulate HTML, the browser, and to talk with other services like APIS that live on other servers.
+2. Like CSS, the javascript can be inline, internal and external.
+3. Using java script we can dynamically take inputs and also change the HTML.
+4. Another thing that we can do with Jaavascript is make AJAX calls. It was very popular back in the day becuase using AJAX, you could do all sorts of interactive and advanced things from the browser without having to refresh the page.
+5. AJAX stands for Asynchronous Javascript and XML and is just a certain technique that involve javascript.
+6. AJAX works like this: In your web browser, you have loaded an HTML document and some javascript that might have come from an external js document. Now, from the browser, you can call an external API that might have a URL like this: https://server.com/api. This API can return something like a docment that you then process using javascript in the browser. The point of this is, using JavaScript in the context of the AJAX technique, you can call server-side resources, like APIs, without refreshing your browser.This allows developers to create very interactive web applications.
+7. AJAX is not a programming language. It is a technique for accessing web servers from a web page.
+8. Most of the features of javascript are described in the ECMAScript Standard. Like HTML and CSS, not all web browsers support all the specifications of JavaScript. To know, go to the website https://caniuse.com.
+
+
+Working With JavaScript:
+-------------------------------------------------
+1. We know that the main documents that any web page or app contain are : HTML that contains content like text and images, CSS to style html and JS to make it interactive. These docs are hosted on a web server that exposes them to the internet using unique URLs. Then web browsers that are used from client computers can access these documents through the HTTP.
+2. As a web developer, you just need to worry about creating the documents and putting them on the web server.
+3. Once the documents are on the client machine, the web browser interprets them and styles the HTML with CSSand loads the js to be executed.
+4. The web browsers are the main ingredient that actually run the code that you write in your HTML, CSS and javascript docuemnts.
+
+
+Ways of writing JavaScript:
+-------------------------------------------------
+1. Writing from scratch using text editors or IDEs.
+2. Using JavaScript Libraries and Frameworks. Just like there are CSS libraries that provide premade styles for you, there are Javascript libraries that provide premade js functionlaities for you. There are so many. Some of them are:
+JQuery
+Dojo Toolkit
+Prototype.js
+Bootstrap - A CSS library that also contains js functionality in the form of jquery plugins to do things like   	    animations.
+Velocity.js
+D3.js
+
+Libraries like these speed the development process.
+
+Some of the javascript frameworks are:
+Angular, 
+Knockout,
+React,
+TypeScript
+Ember.js
+Vue.js
+Backbone.js
+
+
+Frameworks and libraries like these are abstractions on top of plain javascript and you need to learn how they work.
+
+
+
+
+
+
+
