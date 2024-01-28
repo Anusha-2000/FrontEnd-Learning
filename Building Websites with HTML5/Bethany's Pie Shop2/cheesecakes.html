@@ -6,17 +6,8 @@
         <meta name="description" content="Bethany's Pie Shop">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="images/favicon.png">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="styles.css">
         <title>Welcome to Bethany's Pie Shop</title>
-    
-        <style>
-            table, td, th {
-                border-collapse: collapse;
-                border: 1px solid black;
-                padding: 5px
-            }
-        </style>
-        
     
     </head>
     <body>
@@ -30,17 +21,24 @@
             </nav>
         </header>
         
-        <div style="width: 1000px; margin-left: auto; margin-right: auto;">
+        <div id="main-container">
             <aside id="leftmenu">
                 <a href="index.html"><img src="images/bethanylogo.png" alt="Bethany logo" /></a>
                 <header>
-                    <h4 style="text-align: center;">Browse our menu</h4>
+                    <h4>Browse our menu</h4>
                 </header>
-                <input type="search" class="searchbox" placeholder="Search our store" />
+                <ul>
+                    <li><a href="pieoverview.html">All Pies</a></li>
+                    <li><a href="fruitpies.html">Fruit pies</a></li>
+                    <li><a href="seasonalpies.html">Seasonal Pies</a></li>
+                </ul>
+                <div id="search-container">
+                    <input class="searchbox" type="search" placeholder="Search our store" />
+                </div>
             </aside>
 
             <main id="main">
-                <table>
+                <table class="pie-list-table">
                     <caption>
                         Our delicious collections of pies for you to enjoy!
                     </caption>
